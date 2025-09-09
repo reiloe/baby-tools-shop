@@ -8,7 +8,7 @@ COPY babyshop_app/ $WORKDIR
 
 EXPOSE ${PORT}
 
-VOLUME /app
+VOLUME /abc
 
 RUN groupadd developer && useradd -m -g developer pythonuser && chown -R pythonuser /app
 
