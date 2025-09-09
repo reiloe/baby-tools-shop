@@ -1,37 +1,34 @@
-# E-Commerce Project For Baby Tools
+# Containerization
+
+## Goal
+
+The goal of this project is to containerize a Django app. This includes creation of a virtual Python environment in the Docker container and creation of a Django superuser (for admin interface).
+
+## Table of content
+
+1. [Technologies](#Technologies)
+2. [Quickstart](#Quickstart)
 
 ### TECHNOLOGIES
 
+- Docker
+- Bash
 - Python 3.9
 - Django 4.0.2
 - Venv
 
-### Hints
+### Quickstart
 
-This section will cover some hot tips when trying to interacting with this repository:
+First, create a file (e.g., .env) that contains some necessary configuration parameters.
 
-- Settings & Configuration for Django can be found in `babyshop_app/babyshop/settings.py`
-- Routing: Routing information, such as available routes can be found from any `urls.py` file in `babyshop_app` and corresponding subdirectories
+```text
+DJANGO_SU_NAME=myAdminUser
+DJANGO_SU_EMAIL=admin@example.com
+DJANGO_SU_PASSWORD=mySuperSecretPassword
+```
 
-### Photos
+Now you can run the setup.sh script with this file as an argument.
 
-##### Home Page with login
-
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080815407.jpg"></img>
-##### Home Page with filter
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080840305.jpg"></img>
-##### Product Detail Page
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080934541.jpg"></img>
-
-##### Home Page with no login
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080953570.jpg"></img>
-
-
-##### Register Page
-
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323081016022.jpg"></img>
-
-
-##### Login Page
-
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323081044867.jpg"></img>
+```bash
+./setup.sh path/to/environmentfile/.env
+```
