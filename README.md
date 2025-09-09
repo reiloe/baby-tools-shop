@@ -19,7 +19,7 @@ The goal of this project is to containerize a Django app. This includes creation
 
 ### Quickstart
 
-First, create a file (e.g., .env) that contains some necessary configuration parameters.
+First, create a file (e.g.: .env) that contains some necessary configuration parameters.
 
 ```text
 DJANGO_SU_NAME=myAdminUser
