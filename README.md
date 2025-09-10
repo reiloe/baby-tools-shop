@@ -25,6 +25,8 @@ First, create a file (e.g.: .env) that contains some necessary configuration par
 DJANGO_SU_NAME=myAdminUser
 DJANGO_SU_EMAIL=admin@example.com
 DJANGO_SU_PASSWORD=mySuperSecretPassword
+IP=127.0.0.1 (If the container not run on localhost enter IP of the remote host here (eg.: 1.2.3.4))
+DOMAIN=localhost (If the container not run on localhost enter the DOMAIN of the remote maschine here (eg.: my-vserver.com))
 ```
 
 Now you can run the setup.sh script with this file as an argument.
