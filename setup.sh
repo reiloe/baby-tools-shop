@@ -16,6 +16,11 @@ echo "##############################################"
 docker build -t babyshop .
 
 echo "##############################################"
+echo "#               Create Volume                #"
+echo "##############################################"
+docker volume create babyshop
+
+echo "##############################################"
 echo "#          Starting Docker Container         #"
 echo "##############################################"
-docker run --name babyshop --restart always -d -p 8025:8000  --env-file="${ENV}" babyshop
+docker run --name babyshop --restart always -d -p 8025:8000  --env-file="${ENV}" -v babyshop:/app:ro babyshop

@@ -1,6 +1,5 @@
 #! /bin/bash
 
-python -m venv shop-venv && source shop-venv/bin/activate
 python -m pip install pip --upgrade pip
 pip install -r requirements.txt
 

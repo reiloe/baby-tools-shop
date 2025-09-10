@@ -1,36 +1,75 @@
 # Containerization
 
-## Goal
-
 The goal of this project is to containerize a Django app. This includes creation of a virtual Python environment in the Docker container and creation of a Django superuser (for admin interface).
 
 ## Table of content
 
-1. [Technologies](#Technologies)
+1. [Prerequisites](#Prerequisites)
 2. [Quickstart](#Quickstart)
+3. [Usage](#Usage)
+4. [Photos](#Photos)
 
-### TECHNOLOGIES
+### Prerequisites
 
+- Git
 - Docker
-- Bash
-- Python 3.9
-- Django 4.0.2
-- Venv
 
 ### Quickstart
 
-First, create a file (e.g.: .env) that contains some necessary configuration parameters.
-
-```text
-DJANGO_SU_NAME=myAdminUser
-DJANGO_SU_EMAIL=admin@example.com
-DJANGO_SU_PASSWORD=mySuperSecretPassword
-IP=127.0.0.1 (If the container not run on localhost enter IP of the remote host here (eg.: 1.2.3.4))
-DOMAIN=localhost (If the container not run on localhost enter the DOMAIN of the remote maschine here (eg.: my-vserver.com))
-```
-
-Now you can run the setup.sh script with this file as an argument.
+- Open a terminal
+- Navigate to a folder od choice
+- Clone the project
+- Navigate into the root folder (named baby-tools-shop)
+- run the following command:
 
 ```bash
-./setup.sh path/to/environmentfile/.env
+./setup.sh example.env
 ```
+
+> [!CAUTION]
+> The file ![example.env](example.env) is only for testing !!!
+
+The container is ready for use after a short time and can be accessed at localhost:8025.
+You can visit the admin interface of the web server at localhost:8025/admin (username/password is in example.env)
+
+### Usage
+
+The example.env file from the [Quickstart](#Quickstart) contains settings for the web server (e.g., the admin user).  
+For your own (and more secure) use, you must copy the example.env file and rename the copy to .env.  
+You should then replace the example values in the copied .env file with your own values.
+Now you can run the project with your own settings:
+
+```bash
+./setup.sh .env
+```
+
+> [!NOTE]
+> After the first start, there are no products, categories nor shop users in the shop system  
+> You must create products and categories in the admin panel.  
+> Users have to register via registration page
+
+### Photos
+
+##### Shop Home Page with login
+<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080815407.jpg"></img>
+
+##### Shop Home Page with filter
+<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080840305.jpg"></img>
+
+##### Shop Product Detail Page
+<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080934541.jpg"></img>
+
+##### Shop Home Page with no login
+<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080953570.jpg"></img>
+
+##### Shop Register Page
+<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323081016022.jpg"></img>
+
+##### Shop Login Page
+<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323081044867.jpg"></img>
+
+##### Admin Login Page
+![Admin Login Page](eproject_images/admin-login.png)
+
+##### Admin Page
+![Admin Page](eproject_images/admin-site.png)
