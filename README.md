@@ -69,7 +69,7 @@ Now you can run the project with your own settings:
 <img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323081044867.jpg"></img>
 
 ##### Admin Login Page
-![Admin Login Page](eproject_images/admin-login.png)
+![Admin Login Page](project_images/admin-login.png)
 
 ##### Admin Page
-![Admin Page](eproject_images/admin-site.png)
+![Admin Page](project_images/admin-site.png)
