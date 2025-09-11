@@ -50,7 +50,7 @@ You can visit the admin interface of the web server at localhost:8025/admin (use
 
 ### Usage
 
-The example.env file from the [Quickstart](#Quickstart) contains settings for the web server (e.g., the admin user).  
+The example.env file from the [Quickstart](#Quickstart) contains settings for the web server (e.g.: the admin user).  
 For your own (and more secure) use, you must copy the example.env file and rename the copy to .env.  
 You should then replace the example values in the copied .env file with your own values.
 Now you can run the project with your own settings:
@@ -67,22 +67,22 @@ Now you can run the project with your own settings:
 ### Photos
 
 ##### Shop Home Page with login
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080815407.jpg"></img>
+![Home Page with login](project_images/capture_20220323080815407.jpg)
 
 ##### Shop Home Page with filter
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080840305.jpg"></img>
+![Home Page with filter](project_images/capture_20220323080840305.jpg)
 
 ##### Shop Product Detail Page
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080934541.jpg"></img>
+![Product Detail Page](project_images/capture_20220323080934541.jpg)
 
 ##### Shop Home Page with no login
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323080953570.jpg"></img>
+![Home Page with no login](project_images/capture_20220323080953570.jpg)
 
 ##### Shop Register Page
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323081016022.jpg"></img>
+![Register Page](project_images/capture_20220323081016022.jpg)
 
 ##### Shop Login Page
-<img alt="" src="https://github.com/MET-DEV/Django-E-Commerce/blob/master/project_images/capture_20220323081044867.jpg"></img>
+![Login Page](project_images/capture_20220323081044867.jpg)
 
 ##### Admin Login Page
 ![Admin Login Page](project_images/admin-login.png)
