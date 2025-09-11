@@ -57,7 +57,7 @@ For your own (and more secure) use, you must copy the example.env file and renam
 cp example.env .env
 ```
 
-You should then replace the example values in the copied .env file with your own values.
+You should then replace the example values in the copied .env file with your own values.  
 Now you can run the project with your own settings:
 
 ```bash
