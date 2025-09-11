@@ -17,9 +17,25 @@ The goal of this project is to containerize a Django app. This includes creation
 ### Quickstart
 
 - Open a terminal
-- Navigate to a folder od choice
+
+- Navigate to a folder of choice
+
+```bash
+cd my/test/folder
+```
+
 - Clone the project
+
+```bash
+git clone https://github.com/reiloe/baby-tools-shop.git
+```
+
 - Navigate into the root folder (named baby-tools-shop)
+
+```bash
+cd baby-tools-shop
+```
+
 - run the following command:
 
 ```bash
