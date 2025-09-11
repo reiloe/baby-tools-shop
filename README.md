@@ -43,7 +43,7 @@ cd baby-tools-shop
 ```
 
 > [!CAUTION]
-> The file ![example.env](example.env) is only for testing !!!
+> The file [example.env](example.env) is only for testing !!!
 
 The container is ready for use after a short time and can be accessed at localhost:8025.
 You can visit the admin interface of the web server at localhost:8025/admin (username/password is in example.env)
@@ -52,6 +52,11 @@ You can visit the admin interface of the web server at localhost:8025/admin (use
 
 The example.env file from the [Quickstart](#Quickstart) contains settings for the web server (e.g.: the admin user).  
 For your own (and more secure) use, you must copy the example.env file and rename the copy to .env.  
+
+```bash
+cp example.env .env
+```
+
 You should then replace the example values in the copied .env file with your own values.
 Now you can run the project with your own settings:
 
